@@ -1,4 +1,4 @@
-﻿
+
 
 // 쉐이더 "위치/이름"
 Shader "Custom/Shader1"

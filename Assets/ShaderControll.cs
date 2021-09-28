@@ -5,6 +5,9 @@
 Unity ShaderLab Document
 https://docs.unity3d.com/kr/current/Manual/ShadersOverview.html
 
+Unity Shader Properties 문법
+https://docs.unity3d.com/kr/current/Manual/SL-Properties.html
+
 비쥬얼 스튜디오 Unity ShaderLeb 인텔리전스
 https://github.com/wudixiaop/ShaderlabVS
 
@@ -19,6 +22,9 @@ https://docs.unity3d.com/ScriptReference/MaterialPropertyDrawer.html
 
 렌더링 파이프라인, 모니터에 대한 기본적인 이해
 https://nullreferenceexception.tistory.com/53?category=730281
+
+Built-In Function
+https://www.shaderific.com/glsl-functions/
 
 */
 

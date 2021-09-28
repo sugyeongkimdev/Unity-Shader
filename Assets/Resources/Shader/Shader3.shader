@@ -27,7 +27,7 @@ Shader "Custom/Shader3"
             float2 uv_MainTex;
         };
         
-        sampler2D _MainTex; // 프로퍼티에서 선언하지 않았지만 기본으로 있음
+        sampler2D _MainTex; // 기본 메인 텍스쳐
         fixed4 _Color;      // 색상
         float _Brightness;  // float 휘도
 
