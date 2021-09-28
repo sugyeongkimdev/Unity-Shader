@@ -123,6 +123,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &267363676
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Custom/Shader1
+  m_Shader: {fileID: 4800000, guid: 8ad4708698ba4ec4f952d27d93040d61, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c235f39a9fed4114ba957668ea98b87e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &437726284
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,34 +354,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!21 &949006339
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Custom/Shader4
-  m_Shader: {fileID: 4800000, guid: f3f1e8b485b30a840b2b413381592c05, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c235f39a9fed4114ba957668ea98b87e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorLerp: 0
-    m_Colors:
-    - _Color: {r: 0.3, g: 0.6, b: 0.9, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1007481658
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +407,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 949006339}
+  - {fileID: 267363676}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -450,9 +449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab942cc19a87e44db3d748ba535608a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shaderIndex: 4
-  currentMaterial: {fileID: 949006339}
-  currentShaderInfo: "\uAE30\uBCF8 \uB0B4\uC7A5 \uD568\uC218 \uC0AC\uC6A9"
+  shaderIndex: 1
+  currentMaterial: {fileID: 267363676}
+  currentShaderInfo: "\uAE30\uBCF8\uC801\uC778 \uC250\uC774\uB354"
 --- !u!4 &1007481663
 Transform:
   m_ObjectHideFlags: 0
