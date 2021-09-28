@@ -34,7 +34,12 @@ Shader "Custom/Shader4"
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+
+            // lerp 함수로 가중치를 사용해서 색상을 설정
             fixed4 lerpColor = lerp(c, _Color, _ColorLerp);
+
+            // 생략된 부분이 있지만 위 lerp 함수는 아래와 같이 계산되어 작동한다고 보면 됨
+            //fixed4 lerpColor = ((1 - _ColorLerp) * c.rgba) + (_ColorLerp * _Color);
 
             o.Emission = lerpColor;
         }

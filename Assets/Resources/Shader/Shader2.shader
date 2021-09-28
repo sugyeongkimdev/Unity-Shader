@@ -38,11 +38,8 @@ Shader "Custom/Shader2"
             fixed4 c1 = tex2D (_MainTex, IN.uv_MainTex);
             fixed4 c2 = tex2D (_SubTex, IN.uv_SubTex);
 
-            // lerp 함수로 가중치를 사용해서 색상을 설정
-            fixed4 c3 = lerp(c1, c2, _Lerp);
-
-            // 생략된 부분이 있지만 위 lerp 함수는 아래와 같이 계산되어 작동한다고 보면 됨
-            //fixed4 c3 = ((1 - _Lerp) * c1.rgba) + (_Lerp * c2.rgba);
+            // lerp, 이후에 다룸
+            fixed4 c3 = ((1 - _Lerp) * c1.rgba) + (_Lerp * c2.rgba);
 
             // 가중치가 적용된 색상을 적용
             o.Emission = c3;
