@@ -1,5 +1,5 @@
 # UnityShader
-Lerne Unity Shader
+Learn Unity Shader
 
 순전히 쉐이더 공부 목적으로 만듬
 
