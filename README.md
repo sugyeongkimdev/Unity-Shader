@@ -35,21 +35,21 @@ Learn Unity Shader
 
 ---
 
-### [UV Base](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader4.shader)
+### [UV Base](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader5.shader)
 UV 기초
 
 ![Shader5](https://user-images.githubusercontent.com/51020780/135273529-e2638941-2e51-4c50-ae5f-7e43fdcbbc09.gif)
 
 ---
 
-### [Texture Blend](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader4.shader)
+### [Texture Blend](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader6.shader)
 알파와 텍스쳐 블랜딩
 
 ![Shader6](https://user-images.githubusercontent.com/51020780/135273534-12b0630d-419d-491e-b6a8-da91b6d2582f.png)
 
 ---
 
-### [Perlin Nose UV](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader4.shader)
+### [Perlin Nose UV](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader7.shader)
 펄린 노이즈와 UV
 
 ![Shader7](https://user-images.githubusercontent.com/51020780/135274335-e5240bf3-1b86-4029-b259-e20f641f6bbd.gif)
