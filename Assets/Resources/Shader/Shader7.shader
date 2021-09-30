@@ -26,6 +26,9 @@ Shader "Custom/Shader7"
         CGPROGRAM
         
         #pragma surface surf Standard
+
+        // target 4.0인 이유는 텍스쳐가 너무 많아서.
+        // 공부목적이므로 텍스쳐와 성능에 관해서는 무시하는 사항
         #pragma target 4.0
 
         struct Input

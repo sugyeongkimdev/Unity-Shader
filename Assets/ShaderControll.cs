@@ -28,6 +28,8 @@ https://www.shaderific.com/glsl-functions/
 
 */
 
+//============================================================//
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,11 +48,35 @@ public class ShaderControll : MonoBehaviour
     [TextArea(2,3)]
     public string currentShaderInfo;
 
-    //===================================================//
+    //============================================================//
 
     private MeshRenderer render;
+    private MeshFilter filter;
 
-    //===================================================//
+    //============================================================//
+    private void Reset ()
+    {
+        matCachedDic.Clear ();
+    }
+
+    private void Update ()
+    {
+        if(!render)
+        {
+            render = GetComponent<MeshRenderer> ();
+        }
+        if(!filter)
+        {
+            filter = GetComponent<MeshFilter> ();
+        }
+
+        if(render.sharedMaterial?.name != GetName ())
+        {
+            render.sharedMaterial = GetMaterial ();
+        }
+    }
+
+    //============================================================//
 
     // 메테리얼 얻기
     private static Dictionary<string, Material> matCachedDic = new Dictionary<string, Material>();
@@ -96,6 +122,14 @@ public class ShaderControll : MonoBehaviour
                 mat.SetTexture ("_SubTex3", Perlin (3));
                 mat.SetTexture ("_SubTex4", Perlin (4));
                 break;
+            case 8:
+                currentShaderInfo = "버텍스";
+                // 계속해서 수정중
+
+                // 버텍스 색 칠하기
+                VertexUtil.SplitMesh (filter.sharedMesh);
+                VertexUtil.DrawColor (filter.sharedMesh);
+                break;
         }
 
         return currentMaterial = mat;
@@ -112,24 +146,6 @@ public class ShaderControll : MonoBehaviour
         return Resources.Load<Texture2D> ($"Perlin/Perlin{index}");
     }
 
-    //===================================================//
-    private void Reset ()
-    {
-        matCachedDic.Clear ();
-    }
-
-    private void Update ()
-    {
-        if(!render)
-        {
-            render = GetComponent<MeshRenderer> ();
-        }
-
-        if(render.sharedMaterial?.name != GetName())
-        {
-            render.sharedMaterial = GetMaterial ();
-        }
-    }
 }
 
 #endif
