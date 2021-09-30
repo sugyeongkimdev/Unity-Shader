@@ -53,4 +53,11 @@ UV 기초
 펄린 노이즈와 UV
 
 ![Shader7](https://user-images.githubusercontent.com/51020780/135274335-e5240bf3-1b86-4029-b259-e20f641f6bbd.gif)
+---
+
+### [Vertex](https://github.com/sugyeongkimdev/Unity-Shader/blob/main/Assets/Resources/Shader/Shader8.shader)
+버텍스(Vertex)
+
+![Shader8](https://user-images.githubusercontent.com/51020780/135463414-6a30ea69-5109-4fed-bf40-fc0fde71baee.png)
+
 
