@@ -28,8 +28,6 @@ Shader "LearnShader/Sader101_Basic"
 			Blend Srcalpha oneMinusSrcAlpha
 			//Blend one one
 
-
-
 			CGPROGRAM
 
 			#pragma vertex vert
@@ -92,13 +90,8 @@ Shader "LearnShader/Sader101_Basic"
 				// blend one one
 				//float4 color = tex2D(_MainTex, i.uv);
 				//return color * color.a;
-
 			}
-
-
-
 			ENDCG
-
 		}
 	}
 }
